@@ -1,0 +1,23 @@
+<!-- demo.html → fake customer website
+widget-life.js → embed/loader script
+/embed → the actual webpage loaded inside the iframe
+embed-widget.tsx → reads organizationId from the iframe URL
+WidgetChatScreen → actual chat UI -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Echo Widget Demo</title>
+  </head>
+
+  <body>
+    <h1>Customer Website</h1>
+
+    <p>This represents an external customer website.</p>
+
+    <script
+      src="../../apps/embed/dist/widget-life.js"
+      data-organization-id="org_123"
+    ></script>
+  </body>
+</html>
